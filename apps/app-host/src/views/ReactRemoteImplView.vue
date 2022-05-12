@@ -9,6 +9,6 @@ import { renderApp } from "react-remote/main"
 const reactRef = ref<HTMLDivElement>()
 
 onMounted(() => {
-  renderApp(reactRef.value)
+  renderApp(reactRef.value!)
 })
 </script>

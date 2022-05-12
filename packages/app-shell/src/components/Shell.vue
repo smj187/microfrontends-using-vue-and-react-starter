@@ -2,7 +2,6 @@
 import Header from "./Header.vue"
 import Aside from "./Aside.vue"
 import Main from "./Main.vue"
-import { defineProps } from "vue"
 
 const props = defineProps({
   appName: String,

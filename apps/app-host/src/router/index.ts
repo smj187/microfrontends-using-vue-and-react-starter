@@ -16,12 +16,12 @@ const router = createRouter({
 
     // shared
     {
-      path: "/shared-react",
+      path: "/shared-react-element",
       name: "SharedReact",
       component: () => import("../views/ReactSharedImplView.vue"),
     },
     {
-      path: "/shared-component",
+      path: "/shared-vue-element",
       name: "SharedVue",
       component: () => import("../views/VueSharedImplView.vue"),
     },

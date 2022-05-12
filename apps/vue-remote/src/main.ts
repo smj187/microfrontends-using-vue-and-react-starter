@@ -1,9 +1,10 @@
 import { createApp } from "vue"
-import LocalApp from "./apps/LocalApp.vue"
-import RemoteApp from "./apps/RemoteApp.vue"
-import { buildRouter } from "./router"
 import { createPinia } from "pinia"
-import "./assets/index.css"
+
+import LocalApp from "@/apps/LocalApp.vue"
+import RemoteApp from "@/apps/RemoteApp.vue"
+import "@/assets/index.css"
+import { buildRouter } from "@/router"
 
 const renderApp = (el: HTMLDivElement | string) => {
   const app = createApp(import.meta.env.DEV ? LocalApp : RemoteApp)
@@ -14,7 +15,6 @@ const renderApp = (el: HTMLDivElement | string) => {
 }
 
 if (import.meta.env.DEV) {
-  console.log("local build")
   renderApp("#app")
 }
 

@@ -72,7 +72,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref, defineProps } from "vue"
+import { onMounted, ref } from "vue"
 import { useShellStore } from "../store"
 
 const props = defineProps({

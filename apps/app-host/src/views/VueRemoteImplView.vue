@@ -9,6 +9,6 @@ import { renderApp } from "vue-remote/main"
 const vueRef = ref<HTMLDivElement>()
 
 onMounted(() => {
-  renderApp(vueRef.value)
+  renderApp(vueRef.value!)
 })
 </script>

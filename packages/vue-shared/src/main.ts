@@ -1,5 +1,6 @@
 import { createApp } from "vue"
-import App from "./App.vue"
+
+import LocalApp from "./apps/LocalApp.vue"
 import "./assets/index.css"
 
-createApp(App).mount("#app")
+createApp(LocalApp).mount("#app")

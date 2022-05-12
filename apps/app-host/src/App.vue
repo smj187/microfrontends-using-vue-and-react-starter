@@ -1,10 +1,3 @@
-<script setup lang="ts">
-import { Shell } from "app-shell"
-import { Link } from "app-shell"
-
-import { RouterView, RouterLink } from "vue-router"
-</script>
-
 <template>
   <Shell app-name="Main-App">
     <template #header>
@@ -43,3 +36,8 @@ import { RouterView, RouterLink } from "vue-router"
     </template>
   </Shell>
 </template>
+
+<script setup lang="ts">
+import { Shell, Link } from "app-shell"
+import { RouterView, RouterLink } from "vue-router"
+</script>

@@ -1,8 +1,8 @@
 import { Suspense } from "react"
 import { Route, Routes, Link, BrowserRouter } from "react-router-dom"
-import logo from "./assets/logo.svg"
-import Home from "./views/HomeView"
-import RemoteView from "./views/RemoteView"
+
+import Home from "@/views/HomeView"
+import RemoteView from "@/views/RemoteView"
 
 function App() {
   return (
