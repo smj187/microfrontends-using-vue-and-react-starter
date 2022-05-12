@@ -11,6 +11,7 @@ export default defineConfig({
       exposes: {
         "./Counter": "./src/components/Counter.tsx",
         "./ReactView": "./src/views/ReactView.tsx",
+        "./main": "./src/main.tsx",
       },
       remotes: {},
       shared: [],

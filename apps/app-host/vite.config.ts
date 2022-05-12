@@ -11,6 +11,7 @@ export default defineConfig({
       exposes: {},
       remotes: {
         "react-remote": "http://localhost:4173/assets/remoteEntry.js",
+        "vue-remote": "http://localhost:4174/assets/remoteEntry.js",
       },
       shared: [],
     }),

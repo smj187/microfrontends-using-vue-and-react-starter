@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "app-shell": "workspace:*",
+    "react-shared": "workspace:*",
+    "vue-shared": "workspace:*",
     "pinia": "^2.0.14",
     "vue": "^3.2.25",
     "vue-router": "^4.0.15"

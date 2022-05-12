@@ -5,8 +5,8 @@ this repo is a poc implementation to see if the following points are possible
 - [x] use shared ui
 - [x] share state between apps
 - [x] render react in vue
-- [ ] render vue in vue
-- [ ] use nested routing with vue/react
+- [x] render vue in vue
+- [x] use nested routing with vue/react
 - [ ] use error boundaries
 - [ ] configure turborepo as monorepo
 - [ ] configure prod/dev build environment

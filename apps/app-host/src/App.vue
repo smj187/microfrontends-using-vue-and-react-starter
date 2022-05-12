@@ -19,11 +19,21 @@ import { RouterView, RouterLink } from "vue-router"
         <RouterLink to="/about">
           <Link name="About" />
         </RouterLink>
-        <RouterLink to="/react">
-          <Link name="React View" />
+
+        <RouterLink :to="{ name: 'SharedReact' }">
+          <Link name="Shared React Button" />
         </RouterLink>
-        <RouterLink to="/react-component">
-          <Link name="React Component" />
+
+        <RouterLink :to="{ name: 'SharedVue' }">
+          <Link name="Shared Vue Button" />
+        </RouterLink>
+
+        <RouterLink :to="{ name: 'VueRemote' }">
+          <Link name="Vue Remote" />
+        </RouterLink>
+
+        <RouterLink :to="{ name: 'ReactRemote' }">
+          <Link name="React Remote" />
         </RouterLink>
       </div>
     </template>

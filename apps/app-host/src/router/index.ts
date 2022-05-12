@@ -14,16 +14,47 @@ const router = createRouter({
       component: () => import("../views/AboutView.vue"),
     },
 
-    // react
+    // shared
     {
-      path: "/react",
-      name: "React",
-      component: () => import("../views/ReactView.vue"),
+      path: "/shared-react",
+      name: "SharedReact",
+      component: () => import("../views/ReactSharedImplView.vue"),
     },
     {
-      path: "/react-component",
-      name: "ReactComponent",
-      component: () => import("../views/ReactComponent.vue"),
+      path: "/shared-component",
+      name: "SharedVue",
+      component: () => import("../views/VueSharedImplView.vue"),
+    },
+
+    // vue remote
+    {
+      path: "/vue-remote",
+      name: "VueRemote",
+      component: () => import("../views/VueRemoteImplView.vue"),
+    },
+    {
+      path: "/vue-remote/:children+",
+      name: "VueRemoteChildren",
+      component: () => import("../views/VueRemoteImplView.vue"),
+    },
+
+    // react remote
+    {
+      path: "/react-remote",
+      name: "ReactRemote",
+      component: () => import("../views/ReactRemoteImplView.vue"),
+    },
+    {
+      path: "/react-remote/:children+",
+      name: "ReactRemoteChildren",
+      component: () => import("../views/ReactRemoteImplView.vue"),
+    },
+
+    // error
+    {
+      path: "/:catchAll(.*)",
+      name: "NotFound",
+      component: () => import("../views/NotFoundView.vue"),
     },
   ],
 })

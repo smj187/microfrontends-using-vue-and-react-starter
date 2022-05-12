@@ -1,14 +1,14 @@
 <template>
-  <div ref="reactRef" />
+  <div ref="reactRef"></div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue"
-import RenderElement from "react-remote/Counter"
+import { renderApp } from "react-remote/main"
 
 const reactRef = ref<HTMLDivElement>()
 
 onMounted(() => {
-  RenderElement(reactRef.value)
+  renderApp(reactRef.value)
 })
 </script>
